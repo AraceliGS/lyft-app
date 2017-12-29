@@ -1,5 +1,5 @@
 /* Seteo */
-
+/* Estilos generales */
 * {
   box-sizing: border-box;
 }
@@ -8,20 +8,14 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* Estilos al body y a los elementos contenidos por este*/
 .grad {
-  background: linear-gradient(to bottom right, #6E4A74 20%, #DF0C8F);
+  background: linear-gradient(to bottom right, #6e4a74 20%, #df0c8f);
 }
 
 .vh100 {
   height: 100vh;
 }
-
-/* .flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .white-logo-container {
   display: flex;

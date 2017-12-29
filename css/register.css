@@ -1,0 +1,38 @@
+/* Seteo */
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Estilos al body y a los elementos contenidos por este*/
+
+.background-image {
+  background-image: url('../assets/images/hero.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.white-logo-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.white-logo-container img {
+  width: 20vw;
+}
+
+/* .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
