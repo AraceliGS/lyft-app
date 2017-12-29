@@ -21,6 +21,13 @@ body {
   height: 100vh;
 }
 
+.flex-container-btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 70vh;
+}
+
 .white-logo-container {
   display: flex;
   align-items: flex-start;
@@ -31,8 +38,11 @@ body {
   width: 20vw;
 }
 
-/* .flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+.btns-register {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  font-size: 1.3em;
+  padding: 17.5px 28px;
+  margin: 0 0.5vw;
+}
