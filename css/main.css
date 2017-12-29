@@ -1,0 +1,34 @@
+/* Seteo */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grad {
+  background: linear-gradient(to bottom right, #6E4A74 20%, #DF0C8F);
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+/* .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.white-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-logo-container img {
+  width: 40vw;
+}
