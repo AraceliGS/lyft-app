@@ -37,7 +37,24 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <p class="text-center">We'll send a text to verify your phone</p>
+              <div class="phone-number-container">
+                <div class="btn-group button-container">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <div class="input-container text-center">
+                  <input type="text" placeholder="Ingrese su número telefónico" class="input-phone-number">
+                </div>
+              </div>
+              <p class="text-center send-text">We'll send a text to verify your phone</p>
             </div>
           </div>
         </div>
@@ -47,14 +64,14 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 third-section">
-              <button type="button" class="btn btn-default btn-lg btn-block active active-button">NEXT</button>
+              <button type="button" class="btn btn-default btn-lg btn-block active active-button" disabled>NEXT</button>
             </div>
           </div>
         </div>
       </section>
     </main>
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../vendors/bootstrap/css/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/register.js"></script>
   </body>
 </html>

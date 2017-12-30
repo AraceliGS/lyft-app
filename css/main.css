@@ -63,12 +63,10 @@ body {
 
 /* Hoja de estilos para el archivo html signup */
 
+/* Estilos a la primera sección */
+
 .first-section-signup {
   border-bottom: 3px solid #eee;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 .container-icon {
@@ -109,9 +107,44 @@ body {
   margin-top: 0.4em;
 }
 
-/* Sección del botón NEXT */
+/* Estilos a la sección del formulario*/
 
-.active-button.active {
+.phone-number-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  height: 8vh;
+  width: 35vw;
+  border: 1px solid #000;
+}
+
+.input-container {
+  display: inline-block;
+  border: 1px solid #000;
+  height: 9vh;
+  width: 45vw;
+}
+
+.input-phone-number {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #adadad;
+  width: 85%;
+  line-height: 48px;
+}
+
+.send-text {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+/* Estilos a la  sección del botón NEXT */
+
+.third-section .btn-default.active {
   background-color: #df0c8f;
   color: #fff;
   border: 1px solid #df0c8f;
@@ -119,14 +152,26 @@ body {
   height: 13vw;
 }
 
-.third-section .btn-default.active:hover {
+.third-section .btn-default.active[disabled] {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.third-section .btn-default.active:hover, .third-section .btn-default.active:focus {
   background-color: #fff;
   color: #df0c8f;
   border: 1px solid #fff;
   outline: 0;
 }
 
-.active-button:active:hover, .active-button:visited {
+.third-section .btn-default.active[disabled]:hover {
+  background-color: #fff;
+  border-color: #ccc;
+  color: #333;
+}
+
+.active-button:visited {
   background-color: #df0c8f;
   color: #fff;
   border: 1px solid #df0c8f;
