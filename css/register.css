@@ -1,7 +1,9 @@
+/* Hoja de estilos para el archivo html register */
 /* Seteo */
 /* Estilos generales */
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -21,12 +23,7 @@ body {
   height: 100vh;
 }
 
-.flex-container-btn {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  height: 70vh;
-}
+/* Estilos al contenedor del logo y al logo mismo */
 
 .white-logo-container {
   display: flex;
@@ -34,15 +31,24 @@ body {
   justify-content: center;
 }
 
-.white-logo-container img {
+.white-logo-2 {
   width: 20vw;
 }
+
+/* Estilos a los botones */
 
 .btns-register {
   color: white;
   background-color: transparent;
   border: 1px solid #ccc;
-  font-size: 1.3em;
+  font-size: 1.2em;
   padding: 17.5px 28px;
   margin: 0 0.5vw;
+}
+
+.flex-container-btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 70vh;
 }

@@ -23,6 +23,111 @@ body {
   justify-content: center;
 }
 
-.white-logo-container img {
+.white-logo-1 {
   width: 40vw;
+}
+
+/* Hoja de estilos para el archivo html register */
+
+/* Estilos al body y a los elementos contenidos por este*/
+
+.background-image {
+  background-image: url('../assets/images/hero.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.white-logo-2 {
+  width: 20vw;
+}
+
+/* Estilos a los botones */
+
+.btns-register {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  font-size: 1.2em;
+  padding: 17.5px 28px;
+  margin: 0 0.5vw;
+}
+
+.flex-container-btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 70vh;
+}
+
+/* Hoja de estilos para el archivo html signup */
+
+.first-section-signup {
+  border-bottom: 3px solid #eee;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.container-icon {
+  display: inline-block;
+  width: 5%;
+}
+
+.icon-button {
+  border-radius: 50%;
+  border: 2px solid #000;
+  font-size: 1.5em;
+  padding: 0px 5px;
+  margin-top: 0.7em;
+}
+
+.icon-button:hover, .icon-button:active:hover, .icon-button:visited {
+  border: 2px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow-left {
+  padding-top: 0.1em;
+}
+
+.container-title {
+  display: inline-block;
+  width: 88%;
+}
+
+.main-title-signup {
+  font-size: 2.1em;
+  margin-top: 15px;
+}
+
+.main-title-paragraph {
+  font-size: 1.2em;
+  margin-top: 0.4em;
+}
+
+/* Sección del botón NEXT */
+
+.active-button.active {
+  background-color: #df0c8f;
+  color: #fff;
+  border: 1px solid #df0c8f;
+  border-radius: 0;
+  height: 13vw;
+}
+
+.third-section .btn-default.active:hover {
+  background-color: #fff;
+  color: #df0c8f;
+  border: 1px solid #fff;
+  outline: 0;
+}
+
+.active-button:active:hover, .active-button:visited {
+  background-color: #df0c8f;
+  color: #fff;
+  border: 1px solid #df0c8f;
 }
