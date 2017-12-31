@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // Variables
   var $flagButton = $('#main-flag-button');
   var $li1 = $('#flag-li-1');
   var $li2 = $('#flag-li-2');
@@ -10,8 +11,8 @@ $(document).ready(function() {
   var $span = $('#main-flag-button span');
   var $nextButton = $('#next-button');
   var MAXCHARACTERS = 12; // es 12 Y no 10, porque si bien te piden que el número debe ser de 10 digitos, la indicación no cuenta el código del país.
-  $input.val('52');
 
+  /* Este evento se aplica al primer li */
   $li1.click(function() {
     $flag = $('#flag-li-1 img');
     $mainFlag = $('#main-flag-button img');
@@ -37,6 +38,8 @@ $(document).ready(function() {
       $input.val('01');
     }
   });
+
+  /* Este evento se aplica al segundo li */
   $li2.click(function() {
     $flag = $('#flag-li-2 img');
     $mainFlag = $('#main-flag-button img');
@@ -63,6 +66,8 @@ $(document).ready(function() {
       $input.val('01');
     }
   });
+
+  /* Este evento se aplica al tercer li */
   $li3.click(function() {
     $flag = $('#flag-li-3 img');
     $mainFlag = $('#main-flag-button img');
@@ -88,21 +93,52 @@ $(document).ready(function() {
       $input.val('01');
     }
   });
+
+  /* Este evento es para activar el botÓn NEXT*/
   $input.on('input', function(event) {
     if (event.target.value.trim()) {
-      $characters = $input.val();
-      if (jQuery.type($characters) === 'string') {
-        console.log(event.target.value.trim().length);
-        var actualNumberOfCharacters = MAXCHARACTERS - event.target.value.trim().length;
-        if (actualNumberOfCharacters === 0) {
-          $nextButton.removeAttr('disabled');
-          $input.addClass('green-border');
+      $characters = $(this).val();
+      var PATTERNPHONENUMBER = /[0-9]/g;
+      // var $noNumbers = PATTERNPHONENUMBER.match($characters);
+      var $numbers = $characters.match(PATTERNPHONENUMBER);
+      // console.log($(this).val());
+      console.log($numbers);
+      var $numberOfCharacters;
+      for (var i = 0; i < $numbers.length; i++) {
+        if ($numbers === null) {
+          $numberOfCharacters = event.target.value.trim().length - $numbers.length;
+        } else {
+          $numberOfCharacters = $numbers.length;
         }
-        if (actualNumberOfCharacters <= -1 || actualNumberOfCharacters > 0) {
-          $nextButton.attr('disabled', 'true');
-          $input.removeClass('green-border');
-        }
+      }
+      console.log($numberOfCharacters);
+      var actualNumberOfCharacters = MAXCHARACTERS - $numberOfCharacters;
+      console.log(actualNumberOfCharacters);
+      if (actualNumberOfCharacters === 0) {
+        $nextButton.removeAttr('disabled');
+        $input.addClass('green-border');
+      }
+      if (actualNumberOfCharacters <= -1 || actualNumberOfCharacters > 0) {
+        $nextButton.attr('disabled', 'true');
+        $input.removeClass('green-border');
       }
     }
   });
 });
+
+// if (event.target.value.trim()) {
+//   $characters = $input.val().split('');
+//   for (var i = 0; i < $characters.length; i++) {
+//     if (jQuery.type(parseInt($characters[i])) === 'number') {
+//       $actualCharacters += 1;
+//     }
+//     var actualNumberOfCharacters = MAXCHARACTERS - $actualCharacters;
+//     if (actualNumberOfCharacters === 0) {
+//       $nextButton.removeAttr('disabled');
+//       $input.addClass('green-border');
+//     }
+//     if (actualNumberOfCharacters <= -1 || actualNumberOfCharacters > 0) {
+//       $nextButton.attr('disabled', 'true');
+//       $input.removeClass('green-border');
+//     }
+//   }
