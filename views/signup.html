@@ -33,25 +33,24 @@
         </div>
       </section>
       <!-- Sección del Formulario -->
-      <section>
+      <section class="form-section">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
               <div class="phone-number-container">
                 <div class="btn-group button-container">
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Action <span class="caret"></span>
+                  <button type="button" class="btn btn-default dropdown-toggle flag-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="main-flag-button">
+                    <img src="../assets/icons/flags/mx.png" alt="Bandera de México" class="main-flag" data-country="mex" data-option="0"> <span class="caret"></span>
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                  <ul class="dropdown-menu flags-container">
+                    <li id="flag-li-1"><img src="../assets/icons/flags/co.png" alt="Bandera de Colombia" class="flags" data-country="co" data-option="1"></li>
+                    <li id="flag-li-2"><img src="../assets/icons/flags/pe.png" alt="Bandera de Perú" class="flags" data-country="pe" data-option="2"></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li id="flag-li-3"><img src="../assets/icons/flags/us.png" alt="Bandera de EE.UU." class="flags" data-country="us" data-option="3"></li>
                   </ul>
                 </div>
                 <div class="input-container text-center">
-                  <input type="text" placeholder="Ingrese su número telefónico" class="input-phone-number">
+                  <input type="text" placeholder="Ingrese su número telefónico" class="input-phone-number" id="phone-number">
                 </div>
               </div>
               <p class="text-center send-text">We'll send a text to verify your phone</p>
@@ -64,7 +63,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 third-section">
-              <button type="button" class="btn btn-default btn-lg btn-block active active-button" disabled>NEXT</button>
+              <button type="button" class="btn btn-default btn-lg btn-block active active-button" id="next-button" disabled>NEXT</button>
             </div>
           </div>
         </div>
@@ -72,6 +71,6 @@
     </main>
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/register.js"></script>
+    <script type="text/javascript" src="../js/signup.js"></script>
   </body>
 </html>

@@ -88,6 +88,11 @@ body {
   cursor: pointer;
 }
 
+.icon-button .btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: none;
+  box-shadow: none ;
+}
+
 .arrow-left {
   padding-top: 0.1em;
 }
@@ -109,6 +114,10 @@ body {
 
 /* Estilos a la sección del formulario*/
 
+.form-section {
+  margin-top: 2.1em;
+}
+
 .phone-number-container {
   display: flex;
   align-items: center;
@@ -116,15 +125,59 @@ body {
 }
 
 .button-container {
-  height: 8vh;
+  height: 11vh;
   width: 35vw;
   border: 1px solid #000;
+  margin-bottom: 0.6em;
+}
+
+.flag-button {
+  border: none;
+}
+
+.flag-button:hover {
+  background-color: transparent;
+}
+
+.form-section .btn-default:active, .form-section .open>.dropdown-toggle.btn-default{
+  border: none;
+  background-color: transparent;
+}
+
+.form-section .btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: none;
+  box-shadow: none ;
+}
+
+.flags-container {
+  line-height: 65px;
+  top: 25%;
+  left: 6.9%;
+}
+
+.main-flag {
+  width: 45px;
+  height: 26px;
+}
+
+.flags {
+  margin-left: 1.5em;
+  width: 40px;
+}
+
+.btn .caret {
+  margin-left: 0.5em;
+  color: #00b2ee;
+}
+
+.spacing {
+  margin-left: 0.7em;
 }
 
 .input-container {
   display: inline-block;
   border: 1px solid #000;
-  height: 9vh;
+  height: 12vh;
   width: 45vw;
 }
 
@@ -134,15 +187,26 @@ body {
   border-right: none;
   border-bottom: 3px solid #adadad;
   width: 85%;
-  line-height: 48px;
+  line-height: 64px;
+  outline-color: transparent;
+}
+
+.green-border {
+  border-bottom: 3px solid #22e333;
+  outline-color: #adadad;
 }
 
 .send-text {
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  margin-top: 1.2em;
 }
 
 /* Estilos a la  sección del botón NEXT */
+
+.third-section {
+  margin-top: 3.5em;
+}
 
 .third-section .btn-default.active {
   background-color: #df0c8f;
