@@ -117,6 +117,13 @@ $(document).ready(function() {
       if (actualNumberOfCharacters === 0) {
         $nextButton.removeAttr('disabled');
         $input.addClass('green-border');
+        $nextButton.on('click', function() {
+          var $randNum = parseInt(Math.random() * 10);
+          var $randNum1 = parseInt(Math.random() * 10);
+          var $randNum2 = parseInt(Math.random() * 10);
+          alert('Tu código: LAB-' + $randNum + $randNum1 + $randNum2);
+          // console.log($randNum);
+        });
       }
       if (actualNumberOfCharacters <= -1 || actualNumberOfCharacters > 0) {
         $nextButton.attr('disabled', 'true');
