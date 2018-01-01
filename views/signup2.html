@@ -12,19 +12,19 @@
   <body class="vh100">
     <!-- Contenido del website -->
     <main>
-      <!-- Primera sección -->
+      <!-- Sección del logo -->
       <section>
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
               <div class="first-section-signup">
                 <div class="container-icon">
-                  <a href="signup.html" type="button" class="btn btn-default icon-button">
+                  <a href="verify.html" type="button" class="btn btn-default icon-button">
                     <span class="glyphicon glyphicon-menu-left arrow-left" aria-hidden="true"></span>
                   </a>
                 </div>
                 <div class="container-title text-center">
-                  <h1 class="main-title-signup">Verify Phone Number</h1>
+                  <h1 class="main-title-signup">Sign up</h1>
                 </div>
                 <p class="main-title-paragraph-2 text-center">Join now for free ride credit</p>
               </div>
@@ -32,21 +32,29 @@
           </div>
         </div>
       </section>
-      <!-- Sección del Formulario -->
-      <section class="verify-section">
+      <!-- Sección del formulario -->
+      <section>
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <div class="lab-code">
-                <span>LAB-</span>
-                <input type="text" class="rand-num-container" id="rand-num-1">
-                <input type="text" class="rand-num-container" id="rand-num-2">
-                <input type="text" class="rand-num-container" id="rand-num-3">
+              <div class="">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Check me out
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
               </div>
-              <span class="text-center enter-code" id="enter-the-code">Enter the code send to </span>
-              <span class="code-number" id="country-code">+</span>
-              <!-- <span class="code-number" id="country-code"></span> -->
-              <button class="btn btn-default resend" type="submit">Resend code</button>
             </div>
           </div>
         </div>
@@ -63,7 +71,7 @@
       </section>
     </main>
     <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/signup.js"></script>
+    <script type="text/javascript" src="../vendors/bootstrap/css/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/register.js"></script>
   </body>
 </html>

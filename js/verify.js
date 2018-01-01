@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   var $input = $('#phone-number');
   var $enterCodeSpan = $('#enter-the-code');
   var $randInput1 = $('rand-num-1');

@@ -24,7 +24,7 @@ body {
 }
 
 .white-logo-1 {
-  width: 40vw;
+  width: 40%;
 }
 
 /* Hoja de estilos para el archivo html register */
@@ -67,6 +67,7 @@ body {
 
 .first-section-signup {
   border-bottom: 3px solid #eee;
+  margin-top: 0.5em;
 }
 
 .container-icon {
@@ -110,6 +111,11 @@ body {
 .main-title-paragraph {
   font-size: 1.2em;
   margin-top: 0.7em;
+}
+
+.main-title-paragraph-2 {
+  font-size: 1.8em;
+  margin-top: 0;
 }
 
 /* Estilos a la sección del formulario*/
@@ -263,4 +269,39 @@ body {
 
 .resend {
   display: block;
+}
+
+/* Estilos para el Closing*/
+
+/* Estilos para el contenedor de la imagen */
+
+.column-direction {
+  flex-direction: column;
+}
+
+/* Estilos de la imagen */
+
+.margin-bottom {
+  margin-bottom: 2em;
+}
+
+
+/* Estilos para el checkbox */
+
+.big-checkbox-container {
+  width: 100%;
+  margin-bottom: 2.5em;
+}
+
+.checkbox {
+  width: 100%;
+}
+
+.label-checkbox {
+  width: 100vw;
+}
+
+.input-checkbox {
+  width: 100%;
+  height: 30vh;
 }
