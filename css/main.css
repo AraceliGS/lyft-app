@@ -103,19 +103,19 @@ body {
 }
 
 .main-title-signup {
-  font-size: 2.1em;
+  font-size: 2.4em;
   margin-top: 15px;
 }
 
 .main-title-paragraph {
   font-size: 1.2em;
-  margin-top: 0.4em;
+  margin-top: 0.7em;
 }
 
 /* Estilos a la sección del formulario*/
 
 .form-section {
-  margin-top: 2.1em;
+  margin-top: 2.5em;
 }
 
 .phone-number-container {
@@ -129,10 +129,14 @@ body {
   width: 35vw;
   border: 1px solid #000;
   margin-bottom: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flag-button {
   border: none;
+  margin-bottom: 0.5em;
 }
 
 .flag-button:hover {
@@ -152,17 +156,18 @@ body {
 .flags-container {
   line-height: 65px;
   top: 25%;
-  left: 6.9%;
+  left: 34%;
 }
 
 .main-flag {
-  width: 45px;
-  height: 26px;
+  width: 60px;
+  height: 36px;
 }
 
 .flags {
   margin-left: 1.5em;
   width: 40px;
+  height: 3%;
 }
 
 .btn .caret {
@@ -199,13 +204,18 @@ body {
 .send-text {
   font-weight: 500;
   font-size: 1.3em;
-  margin-top: 1.2em;
+  margin-top: 1.7em;
 }
 
 /* Estilos a la  sección del botón NEXT */
 
 .third-section {
   margin-top: 3.5em;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  align-items: flex-end;
+  height: 55.3vh;
 }
 
 .third-section .btn-default.active {
@@ -239,4 +249,18 @@ body {
   background-color: #df0c8f;
   color: #fff;
   border: 1px solid #df0c8f;
+}
+
+/* Estilos a la vista Verify */
+
+.verify-section input {
+  border-style: none;
+  border-bottom: 3px solid #ac06ff;
+  width: 3vw;
+}
+
+/* Estilos al botón RESEND CODE */
+
+.resend {
+  display: block;
 }

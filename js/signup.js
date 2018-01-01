@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // Variables
+  // Variables del documento html signup
   var $flagButton = $('#main-flag-button');
   var $li1 = $('#flag-li-1');
   var $li2 = $('#flag-li-2');
@@ -11,7 +11,12 @@ $(document).ready(function() {
   var $span = $('#main-flag-button span');
   var $nextButton = $('#next-button');
   var MAXCHARACTERS = 12; // es 12 Y no 10, porque si bien te piden que el número debe ser de 10 digitos, la indicación no cuenta el código del país.
-
+  // Variables del documento html verify
+  var $enterCodeSpan = $('#enter-the-code');
+  var $codeNumber = $('#country-code');
+  var $randInput1 = $('#rand-num-1');
+  var $randInput2 = $('#rand-num-2');
+  var $randInput3 = $('#rand-num-3');
   /* Este evento se aplica al primer li */
   $li1.click(function() {
     $flag = $('#flag-li-1 img');
@@ -123,6 +128,9 @@ $(document).ready(function() {
           var $randNum2 = parseInt(Math.random() * 10);
           alert('Tu código: LAB-' + $randNum + $randNum1 + $randNum2);
           // console.log($randNum);
+          setTimeout(function() {
+            window.location.href = '../views/verify.html';
+          }, 5000);
         });
       }
       if (actualNumberOfCharacters <= -1 || actualNumberOfCharacters > 0) {
@@ -132,20 +140,3 @@ $(document).ready(function() {
     }
   });
 });
-
-// if (event.target.value.trim()) {
-//   $characters = $input.val().split('');
-//   for (var i = 0; i < $characters.length; i++) {
-//     if (jQuery.type(parseInt($characters[i])) === 'number') {
-//       $actualCharacters += 1;
-//     }
-//     var actualNumberOfCharacters = MAXCHARACTERS - $actualCharacters;
-//     if (actualNumberOfCharacters === 0) {
-//       $nextButton.removeAttr('disabled');
-//       $input.addClass('green-border');
-//     }
-//     if (actualNumberOfCharacters <= -1 || actualNumberOfCharacters > 0) {
-//       $nextButton.attr('disabled', 'true');
-//       $input.removeClass('green-border');
-//     }
-//   }
