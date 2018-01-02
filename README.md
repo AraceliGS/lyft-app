@@ -36,7 +36,7 @@ En esta vista se debe ingresar el código dado anteriormente y una vez hecho est
 
 ![Vista Verify](assets/images/img4.png)
 
-Para ingresar sus datos necesitamos un formulario que le pida su nombre, apellido y correo electrónico. Deberá también tener un checkbox para que se acepten los términos y condiciones del servicio.
+Para ingresar los datos del usuario existe un formulario que le pedirá su nombre, apellido y correo electrónico. También hay un checkbox para que se acepten los términos y condiciones del servicio.
 
 ![Enter Personal Information](assets/images/img5.png)
 
