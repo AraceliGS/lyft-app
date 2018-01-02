@@ -43,6 +43,14 @@ body {
   width: 20vw;
 }
 
+.pink-logo-container {
+  margin-top: 7em;
+}
+
+.pink-logo {
+  width: 35%;
+}
+
 /* Estilos a los botones */
 
 .btns-register {
@@ -54,11 +62,20 @@ body {
   margin: 0 0.5vw;
 }
 
+.btns-register:hover, .btns-register:active {
+  color: white;
+  background-color: #e5e8e8;
+  border: 1px solid #ccc;
+  font-size: 1.2em;
+  padding: 17.5px 28px;
+  margin: 0 0.5vw;
+}
+
 .flex-container-btn {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 70vh;
+  height: 35vh;
 }
 
 /* Hoja de estilos para el archivo html signup */
