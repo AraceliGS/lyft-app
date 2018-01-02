@@ -94,6 +94,10 @@ body {
   box-shadow: none ;
 }
 
+.border-none {
+  border: none;
+}
+
 .arrow-left {
   padding-top: 0.1em;
 }
@@ -104,12 +108,12 @@ body {
 }
 
 .main-title-signup {
-  font-size: 2.4em;
+  font-size: 2.7em;
   margin-top: 15px;
 }
 
 .main-title-paragraph {
-  font-size: 1.2em;
+  font-size: 1.9em;
   margin-top: 0.7em;
 }
 
@@ -216,12 +220,16 @@ body {
 /* Estilos a la  sección del botón NEXT */
 
 .third-section {
-  margin-top: 3.5em;
   padding-left: 0px;
   padding-right: 0px;
   display: flex;
   align-items: flex-end;
-  height: 55.3vh;
+  position: fixed;
+  top: 90vh;
+}
+
+.active-button {
+  height: 10vh;
 }
 
 .third-section .btn-default.active {
@@ -229,7 +237,6 @@ body {
   color: #fff;
   border: 1px solid #df0c8f;
   border-radius: 0;
-  height: 13vw;
 }
 
 .third-section .btn-default.active[disabled] {
@@ -259,10 +266,48 @@ body {
 
 /* Estilos a la vista Verify */
 
+/* Estilos al ícono flecha */
+
+.different-arrow {
+  color: #FF06D2;
+  font-size: 1.5em;
+  padding-top: 0;
+}
+
+/* Estilos a la segunda sección y a sus elementos contenidos*/
+
+.margin-top-2 {
+  margin-top: 2.2em;
+}
+
+.lab-text {
+  font-weight: 700;
+}
+
 .verify-section input {
   border-style: none;
   border-bottom: 3px solid #ac06ff;
   width: 3vw;
+}
+
+.lab-code-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lab-code {
+  margin-bottom: 1.5em;
+}
+
+.code-container {
+  margin-bottom: 1.3em;
+}
+
+.lab-code-container .btn-default {
+  background-color: #D7DBDD;
+  border-color: #D7DBDD;
 }
 
 /* Estilos al botón RESEND CODE */
@@ -271,7 +316,38 @@ body {
   display: block;
 }
 
-/* Estilos para el Closing*/
+/* Estilos para la vista Sign Up 2 */
+
+.form-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-gr-name .form-control {
+  width: 50%;
+}
+
+.input-gr-name, .input-email {
+  width: 70%;
+}
+
+.input-gr-name .glyphicon, .input-email .glyphicon {
+  position: static;
+  color: #D0D3D4;
+  background-color: transparent;
+}
+
+.name-input {
+  text-transform: uppercase;
+}
+
+.name-input::placeholder  {
+  text-transform: capitalize;
+}
+
+
+/* Estilos para el Closing(la vista Close) */
 
 /* Estilos para el contenedor de la imagen */
 

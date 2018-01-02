@@ -19,8 +19,8 @@
             <div class="col-xs-12">
               <div class="first-section-signup">
                 <div class="container-icon">
-                  <a href="signup.html" type="button" class="btn btn-default icon-button">
-                    <span class="glyphicon glyphicon-menu-left arrow-left" aria-hidden="true"></span>
+                  <a href="signup.html" type="button" class="btn btn-default icon-button border-none">
+                    <span class="glyphicon glyphicon-menu-left arrow-left different-arrow" aria-hidden="true"></span>
                   </a>
                 </div>
                 <div class="container-title text-center">
@@ -33,18 +33,20 @@
         </div>
       </section>
       <!-- Sección del Formulario -->
-      <section class="verify-section">
+      <section class="verify-section margin-top-2">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-12 lab-code-container">
               <div class="lab-code">
-                <span>LAB-</span>
+                <span class="lab-text">LAB -</span>
                 <input type="text" class="rand-num-container" id="rand-num-1">
                 <input type="text" class="rand-num-container" id="rand-num-2">
                 <input type="text" class="rand-num-container" id="rand-num-3">
               </div>
-              <span class="text-center enter-code" id="enter-the-code">Enter the code send to </span>
-              <span class="code-number" id="country-code">+</span>
+              <div class="code-container">
+                <span class="text-center enter-code" id="enter-the-code">Enter the code send to </span>
+                <span class="code-number" id="country-code">+</span>
+              </div>
               <!-- <span class="code-number" id="country-code"></span> -->
               <button class="btn btn-default resend" type="submit">Resend code</button>
             </div>
@@ -53,7 +55,7 @@
       </section>
       <!-- Sección del botón -->
       <section>
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12 third-section">
               <button type="button" class="btn btn-default btn-lg btn-block active active-button" id="next-button" disabled>NEXT</button>
