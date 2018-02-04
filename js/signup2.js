@@ -43,12 +43,6 @@ $(document).ready(function() {
     });
   });
 
-  // if ($checkbox.attr('checked') === '') {
-  //   $checkbox.click(function() {
-  //     $checkbox.removeAttr('checked', 'true');
-  //   });
-  // };
-
   // Deshabilitando el botón NEXT
 
   if ($inputFirstName.val() !== '' && $inputLastName.val() !== '' && $checkbox.attr('checked') === true) {

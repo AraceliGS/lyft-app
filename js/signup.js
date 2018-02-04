@@ -10,13 +10,18 @@ $(document).ready(function() {
   var $flag;
   var $span = $('#main-flag-button span');
   var $nextButton = $('#next-button');
-  var MAXCHARACTERS = 12; // es 12 Y no 10, porque si bien te piden que el número debe ser de 10 digitos, la indicación no cuenta el código del país.
+  var MAXCHARACTERS = 11; // es 11 Y no 9, porque si bien te piden que el número debe ser de 9 digitos, la indicación no cuenta el código del país.
   // Variables del documento html verify
   var $enterCodeSpan = $('#enter-the-code');
   var $codeNumber = $('#country-code');
   var $randInput1 = $('#rand-num-1');
   var $randInput2 = $('#rand-num-2');
   var $randInput3 = $('#rand-num-3');
+
+  var codePhoneNumber = function(number) {
+    localStorage.codePhoneNumber = number;
+  };
+
   /* Este evento se aplica al primer li */
   $li1.click(function() {
     $flag = $('#flag-li-1 img');
@@ -32,15 +37,19 @@ $(document).ready(function() {
     $input.val('57');
     if ($('#main-flag-button img').data('country') === 'mex') {
       $input.val('52');
+      codePhoneNumber('52');
     }
     if ($('#main-flag-button img').data('country') === 'co') {
       $input.val('57');
+      codePhoneNumber('57');
     }
     if ($('#main-flag-button img').data('country') === 'pe') {
       $input.val('51');
+      codePhoneNumber('51');
     }
     if ($('#main-flag-button img').data('country') === 'us') {
       $input.val('01');
+      codePhoneNumber('01');
     }
   });
 
@@ -60,15 +69,19 @@ $(document).ready(function() {
     $input.val('51');
     if ($('#main-flag-button img').data('country') === 'mex') {
       $input.val('52');
+      codePhoneNumber('52');
     }
     if ($('#main-flag-button img').data('country') === 'co') {
       $input.val('57');
+      codePhoneNumber('57');
     }
     if ($('#main-flag-button img').data('country') === 'pe') {
       $input.val('51');
+      codePhoneNumber('51');
     }
     if ($('#main-flag-button img').data('country') === 'us') {
       $input.val('01');
+      codePhoneNumber('01');
     }
   });
 
@@ -87,15 +100,19 @@ $(document).ready(function() {
     $input.val('01');
     if ($('#main-flag-button img').data('country') === 'mex') {
       $input.val('52');
+      codePhoneNumber('52');
     }
     if ($('#main-flag-button img').data('country') === 'co') {
       $input.val('57');
+      codePhoneNumber('57');
     }
     if ($('#main-flag-button img').data('country') === 'pe') {
       $input.val('51');
+      codePhoneNumber('51');
     }
     if ($('#main-flag-button img').data('country') === 'us') {
       $input.val('01');
+      codePhoneNumber('01');
     }
   });
 
@@ -122,15 +139,21 @@ $(document).ready(function() {
       if (actualNumberOfCharacters === 0) {
         $nextButton.removeAttr('disabled');
         $input.addClass('green-border');
-        $nextButton.on('click', function() {
+        $nextButton.one('click', function() {
           var $randNum = parseInt(Math.random() * 10);
           var $randNum1 = parseInt(Math.random() * 10);
           var $randNum2 = parseInt(Math.random() * 10);
-          alert('Tu código: LAB-' + $randNum + $randNum1 + $randNum2);
+          console.log($randNum);
+          console.log($randNum1);
+          console.log($randNum2);
+          localStorage.firstDigit = $randNum;
+          localStorage.secondDigit = $randNum1;
+          localStorage.thirdDigit = $randNum2;
+          alert('Tu código: LAB-' + localStorage.firstDigit + localStorage.secondDigit + localStorage.thirdDigit);
           // console.log($randNum);
           setTimeout(function() {
             window.location.href = '../views/verify.html';
-          }, 3000);
+          }, 2000);
         });
       }
       if (actualNumberOfCharacters <= -1 || actualNumberOfCharacters > 0) {

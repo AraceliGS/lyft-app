@@ -318,6 +318,10 @@ body {
   margin-bottom: 1.5em;
 }
 
+.rand-num-container {
+  text-align: center;
+}
+
 .code-container {
   margin-bottom: 1.3em;
 }
