@@ -43,12 +43,8 @@ body {
   width: 20vw;
 }
 
-.pink-logo-container {
-  margin-top: 7em;
-}
-
 .pink-logo {
-  width: 35%;
+  width: 52%;
 }
 
 /* Estilos a los botones */
@@ -75,10 +71,14 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 35vh;
 }
 
-/* Hoja de estilos para el archivo html signup */
+.buttons-section {
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+/* Estilos para el archivo html Signup */
 
 /* Estilos a la primera sección */
 

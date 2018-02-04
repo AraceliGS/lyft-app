@@ -5,6 +5,7 @@ $(document).ready(function() {
   var $randInput2 = $('#rand-num-2');
   var $randInput3 = $('#rand-num-3');
   var $spanCodePhoneNumber = $('#country-code');
+  var $resendButton = $('#button-resend');
   var $nextButton = $('#next-button');
   //  Asignándole valor al span que contienen el valor del código del número telefónico escogido segun el país en la anterior vista
   $spanCodePhoneNumber.text('+' + localStorage.codePhoneNumber);
@@ -13,32 +14,39 @@ $(document).ready(function() {
   $randInput2.focus();
   $randInput3.focus();
   // Verificando si el código enviado al usuario es el adecuado
-  var $counter = 0;
-  $randInput1.on('input', function() {
-    debugger;
-    if ($randInput1.val() === localStorage.firstDigit) {
-      $counter += 1;
-    }
-  });
-
-  $randInput2.on('input', function() {
-    debugger;
-    if ($randInput2.val() === localStorage.secondDigit) {
-      $counter += 1;
-    }
-  });
-
   $randInput3.on('input', function() {
-    debugger;
-    if ($randInput3.val() === localStorage.thirdDigit) {
-      $counter += 1;
-    }
+    let $listOfInputs = $('input');
+    let $string = '';
+    $listOfInputs.each(function(el) {
+      $string += $listOfInputs[el].value;
+      let $codePhoneNumberUser = localStorage.firstDigit + localStorage.secondDigit + localStorage.thirdDigit;
+      if ($string === $codePhoneNumberUser) {
+        $nextButton.removeAttr('disabled');
+      } else {
+        $nextButton.attr('disabled', true);
+      }
+    });
+  });
+  /* Reenviando neuvo código al usuario */
+  $resendButton.on('click', function() {
+    var $randNumber1 = parseInt(Math.random() * 10);
+    var $randNumber2 = parseInt(Math.random() * 10);
+    var $randNumber3 = parseInt(Math.random() * 10);
+    console.log($randNumber1);
+    console.log($randNumber2);
+    console.log($randNumber3);
+    localStorage.firstDigit = $randNumber1;
+    localStorage.secondDigit = $randNumber2;
+    localStorage.thirdDigit = $randNumber3;
+    alert('Tu código: LAB-' + localStorage.firstDigit + localStorage.secondDigit + localStorage.thirdDigit);
+    $randInput1.val('');
+    $randInput2.val('');
+    $randInput3.val(''); 
   });
 
-  if ($counter === 3) {
-    debugger;
-    $nextButton.removeAttr('disabled');
-  } else {
-    $nextButton.attr('diasbled', true);
-  }
+  $nextButton.one('click', function() {
+    setTimeout(function() {
+      window.location.href = '../views/signup2.html';
+    }, 3000);
+  });
 });

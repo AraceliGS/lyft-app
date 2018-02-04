@@ -34,15 +34,6 @@ $(document).ready(function() {
     console.log(PATTEMAIL.test($(this).val()));
   });
 
-  // Agregando el atributo checked
-
-  // $checkbox.on('click', function() {
-  //   $checkbox.attr('checked', 'true');
-  //   $checkbox.on('click', function() {
-  //     $checkbox.removeAttr('checked');
-  //   });
-  // });
-
   // Deshabilitando el botón NEXT
 
   $checkbox.click(function() {
@@ -53,10 +44,9 @@ $(document).ready(function() {
     }
   });
 
-  // if ($inputFirstName.val() !== ' ' && $inputLastName.val() !== ' ') {
-  //   console.log('Hola mundo');
-  //   $nextButton.removeAttr('disabled');
-  // } else {
-  //   $nextButton.attr('disabled', 'true');
-  // }
+  $nextButton.one('click', function() {
+    setTimeout(function() {
+      window.location.href = '../views/close.html';
+    }, 3000);
+  });
 });

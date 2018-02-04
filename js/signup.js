@@ -153,7 +153,7 @@ $(document).ready(function() {
           // console.log($randNum);
           setTimeout(function() {
             window.location.href = '../views/verify.html';
-          }, 2000);
+          }, 3000);
         });
       }
       if (actualNumberOfCharacters <= -1 || actualNumberOfCharacters > 0) {
