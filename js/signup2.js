@@ -36,18 +36,27 @@ $(document).ready(function() {
 
   // Agregando el atributo checked
 
-  $checkbox.on('click', function() {
-    $checkbox.attr('checked', 'true');
-    $checkbox.on('click', function() {
-      $checkbox.removeAttr('checked');
-    });
-  });
+  // $checkbox.on('click', function() {
+  //   $checkbox.attr('checked', 'true');
+  //   $checkbox.on('click', function() {
+  //     $checkbox.removeAttr('checked');
+  //   });
+  // });
 
   // Deshabilitando el botón NEXT
 
-  if ($inputFirstName.val() !== '' && $inputLastName.val() !== '' && $checkbox.attr('checked') === true) {
-    $nextButton.removeAttr('disabled');
-  } else {
-    $nextButton.attr('disabled', 'true');
-  }
+  $checkbox.click(function() {
+    if ($inputFirstName.val().length !== 0 && $inputLastName.val().length !== 0 && $checkbox.prop('checked') === true) {
+      $nextButton.removeAttr('disabled');
+    } else {
+      $nextButton.attr('disabled', 'true');
+    }
+  });
+
+  // if ($inputFirstName.val() !== ' ' && $inputLastName.val() !== ' ') {
+  //   console.log('Hola mundo');
+  //   $nextButton.removeAttr('disabled');
+  // } else {
+  //   $nextButton.attr('disabled', 'true');
+  // }
 });
