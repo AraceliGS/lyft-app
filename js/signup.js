@@ -21,7 +21,8 @@ $(document).ready(function() {
   var codePhoneNumber = function(number) {
     localStorage.codePhoneNumber = number;
   };
-
+  /* Asignando código por defecto */
+  codePhoneNumber('52');
   /* Este evento se aplica al primer li */
   $li1.click(function() {
     $flag = $('#flag-li-1 img');

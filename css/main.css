@@ -40,11 +40,11 @@ body {
 
 
 .white-logo-2 {
-  width: 20vw;
+  width: 40vw;
 }
 
 .pink-logo {
-  width: 52%;
+  width: 47em;
 }
 
 /* Estilos a los botones */
@@ -74,8 +74,7 @@ body {
 }
 
 .buttons-section {
-  margin-bottom: 2em;
-  margin-top: 2em;
+  margin-top: 6.3em;
 }
 
 /* Estilos para el archivo html Signup */
@@ -401,4 +400,41 @@ body {
 .input-checkbox {
   width: 100%;
   height: 30vh;
+}
+
+/*Adaptando ciertos estilos según el dispositivo del usuario */
+
+@media(min-width: 768px) {
+  .buttons-section {
+    margin-top: 4em;
+  }
+}
+
+@media(min-width: 992px) {
+  .white-logo-2 {
+    width: 30vw;
+  }
+
+  .pink-logo {
+    width: 50em;
+  }
+
+  .buttons-section {
+    margin-top: 11em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .white-logo-2 {
+    width: 20vw;
+  }
+  
+  .pink-logo {
+    width: 52%;
+  }
+
+  .buttons-section {
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
 }
