@@ -1,15 +1,23 @@
-# **Lyft**
+# **Lyft-App**
 
 -----------------------------------------------------------------
 -----------------------------------------------------------------
 
-![Lyft](assets/images/lyft.JPG)
+Lyft-App es una aplicación que le permite al usuario registrarse para poder usar el servicio de transporte ofrecido. Está basada en el sitio de la compañía norteamericana Lyft.
 
-## **Objetivo**
+[![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/for-you.svg)](http://forthebadge.com)
 
-Desarrollar una aplicación móvil que replique el sitio de Lyft.
+![image](https://user-images.githubusercontent.com/32301650/36358674-3ef9e6e8-14e0-11e8-8564-c0ee942d2080.png)
 
-## **Conocimiento técnico**
+## **Desarrollado para**
+
+[Laboratoria](http://laboratoria.la)
+
+## **Herramientas Tecnológicas Empleadas**
 
 - HTML
 - CSS
