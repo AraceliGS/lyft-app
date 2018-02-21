@@ -17,6 +17,14 @@ body {
   height: 100vh;
 }
 
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
 .white-logo-container {
   display: flex;
   align-items: center;
@@ -44,7 +52,8 @@ body {
 }
 
 .pink-logo {
-  width: 47em;
+  margin-top: 1em;
+  width: 95%;
 }
 
 /* Estilos a los botones */
@@ -54,17 +63,21 @@ body {
   background-color: transparent;
   border: 1px solid #ccc;
   font-size: 1.2em;
-  padding: 17.5px 28px;
-  margin: 0 0.5vw;
+  padding: 10.5px 10px;
+  font-size: 0.8em;
+  display: inline-block;
+  margin: 0 0.5em 2.5em;
 }
 
 .btns-register:hover, .btns-register:active {
-  color: white;
-  background-color: #e5e8e8;
+  color: black;
+  background-color: transparent;
   border: 1px solid #ccc;
   font-size: 1.2em;
-  padding: 17.5px 28px;
-  margin: 0 0.5vw;
+  padding: 10.5px 10px;
+  font-size: 0.8em;
+  display: inline-block;
+  margin: 0 0.5em 2.5em;
 }
 
 .flex-container-btn {
@@ -210,6 +223,7 @@ body {
   border: 1px solid #000;
   height: 12vh;
   width: 45vw;
+  margin-bottom: 0.1em;
 }
 
 .input-phone-number {
@@ -218,8 +232,9 @@ body {
   border-right: none;
   border-bottom: 3px solid #adadad;
   width: 85%;
-  line-height: 64px;
+  line-height: 48px;
   outline-color: transparent;
+  margin-top: 0.5em;
 }
 
 .green-border {
@@ -405,8 +420,46 @@ body {
 /*Adaptando ciertos estilos según el dispositivo del usuario */
 
 @media(min-width: 768px) {
+
+  .white-logo-1 {
+    width: 35%;
+  }
+
+  .pink-logo {
+    margin-top: 0;
+    width: 85%;
+  }
+
+  .input-container {
+    height: 11.8vh;
+  }
+
+  .input-phone-number {
+    line-height: 65px;
+  }
+
   .buttons-section {
     margin-top: 4em;
+  }
+
+  .btns-register {
+    color: white;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    padding: 17.5px 28px;
+    margin: 2.5em 0.8em;
+    display: inline-block;
+  }
+
+  .btns-register:hover, .btns-register:active {
+    color: black;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    padding: 17.5px 28px;
+    margin: 2.5em 0.8em;
+    display: inline-block;
   }
 }
 
@@ -415,26 +468,90 @@ body {
     width: 30vw;
   }
 
-  .pink-logo {
-    width: 50em;
+  .input-container {
+    height: 11.4vh;
+  }
+
+  .input-phone-number {
+    line-height: 70px;
   }
 
   .buttons-section {
     margin-top: 11em;
   }
+
+  .btns-register {
+    display: inline-block;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    padding: 26.5px 35px;
+    margin: 1em 0.8em 2em;
+  }
+
+  .btns-register:hover, .btns-register:active {
+    background-color: transparent;
+    color: black;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    padding: 26.5px 35px;
+    margin: 1em 0.8em 2em;
+  }
+}
+
+@media only screen and (min-width: 1200px), only screen and (max-height: 920px) {
+  .vh100 {
+    height: auto;
+  }
+
+  .main {
+    height: auto;
+  }
+
+  .white-logo-1 {
+    width: 20%;
+  }
+
+  .pink-logo {
+    width: 45%;
+  }
+
+  .input-phone-number {
+    line-height: 70px;
+  }
 }
 
 @media (min-width: 1200px) {
-  .white-logo-2 {
-    width: 20vw;
-  }
   
-  .pink-logo {
-    width: 52%;
+    .vh100 {
+      height: 100vh;;
+    }
+  
+    .main {
+      height: 100vh;
+    }
+  
+  
+    .white-logo-1 {
+      width: 30%;
+    }
+  
+    .white-logo-2 {
+      width: 20vw;
+    }
+    
+    .pink-logo {
+      width: 72%;
+    }
+  
+    .buttons-section {
+      margin-bottom: 2em;
+      margin-top: 4em;
+    }
+  
+    .input-phone-number {
+      line-height: 70px;
+    }
   }
-
-  .buttons-section {
-    margin-bottom: 2em;
-    margin-top: 4em;
-  }
-}
