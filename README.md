@@ -1,23 +1,20 @@
-# **Lyft-App**
-
------------------------------------------------------------------
------------------------------------------------------------------
+# Lyft-App
 
 Lyft-App es una aplicación que le permite al usuario registrarse para poder usar el servicio de transporte ofrecido. Está basada en el sitio de la compañía norteamericana Lyft.
 
-[![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/for-you.svg)](http://forthebadge.com)
-
 ![image](https://user-images.githubusercontent.com/32301650/36358674-3ef9e6e8-14e0-11e8-8564-c0ee942d2080.png)
 
-## **Desarrollado para**
+## Desarrollado para
 
 [Laboratoria](http://laboratoria.la)
 
-## **Herramientas Tecnológicas Empleadas**
+[![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](http://forthebadge.com)
+
+## Herramientas Tecnológicas Empleadas
 
 - HTML
 - CSS
@@ -26,7 +23,7 @@ Lyft-App es una aplicación que le permite al usuario registrarse para poder usa
 - Bootstrap
 - jQuery / Javascript
 
-## **Flujo de la Aplicación**
+## Flujo de la Aplicación
 
 Vista splash con duración de 2 a 5 segundos que redirecciona a la vista de inicio. La vista de inicio cuenta con dos botones, pero solo se sigue el flujo de **SIGN UP**.
 
@@ -52,7 +49,7 @@ Ya que se ha realizado lo anterior, sólo se deberá mostrar una vista al usuari
 
 ![Closing](assets/images/img6.png)
 
-## **A tener en cuenta**
+## A tener en cuenta
 
 - Se debe cumplir los pasos necesarios para que los usuarios puedan registrarse.
 - Todas las vistas deben de contar con una manera de regresar a la vista anterior.
